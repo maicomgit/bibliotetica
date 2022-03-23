@@ -9,7 +9,7 @@ class CreateBibliotecas < ActiveRecord::Migration
       b.string  :endereço
       b.string  :cidade
       b.string  :estado
-      b.integer :telefone
+      b.string :telefone
       b.string  :email
       b.timestamps
     end  

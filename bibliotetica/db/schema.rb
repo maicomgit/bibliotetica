@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20220323165540) do
+ActiveRecord::Schema.define(:version => 20220323172425) do
 
   create_table "bibliotecas", :force => true do |t|
     t.integer  "dias_emprestimo"
@@ -22,10 +22,21 @@ ActiveRecord::Schema.define(:version => 20220323165540) do
     t.string   "endereço"
     t.string   "cidade"
     t.string   "estado"
-    t.integer  "telefone"
+    t.string   "telefone"
     t.string   "email"
     t.datetime "created_at",          :null => false
     t.datetime "updated_at",          :null => false
+  end
+
+  create_table "livros", :force => true do |t|
+    t.string   "titulo"
+    t.string   "autor"
+    t.string   "genero"
+    t.string   "status"
+    t.integer  "quantidade_paginas"
+    t.integer  "biblioteca_id"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
   end
 
 end
