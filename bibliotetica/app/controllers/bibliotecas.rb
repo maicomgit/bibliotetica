@@ -1,0 +1,5 @@
+class BibliotecasController < ApplicationController
+
+
+
+end    
